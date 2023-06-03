@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Italian</title>
+  <link rel="stylesheet" type="text/css" href="project1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,400;0,500;0,900;1,100;1,200;1,400;1,500;1,800;1,900&display=swap" rel="stylesheet"></head> 
+    <style>
+        .scroll-to-top {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          width: 40px;
+          height: 40px;
+          background-color: #5e00ac;
+          color: #fff;
+          text-align: center;
+          line-height: 40px;
+          font-size: 20px;
+          border-radius: 50%;
+          cursor: pointer;
+          display: none;
+        }
+      </style>
+</head>
+<body>
+      <div>
+        <nav> 
+            <div class="logo" id="your-link-id">Triolingo</div> 
+            <ul> 
+              <li class="list"><a href="index.html">Home</a></li>  
+              <li class="list"><a href="index.html#feedbacks">Feedbacks</a></li>
+              <li class="list dropdown">
+                <a href="index.html#courses" class="dropbtn">Courses <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                  <a href="french.html">French Language</a>
+                  <a href="italian.html">Italian Language</a>
+                  <a href="turkish.html">Turkish Language</a>
+                </div>
+              </li> 
+              <li class="list"><a href="1.html">Game</a></li>  
+              <li class="list"><a href="abc.html">About Us</a></li>
+              <li class="list"><a href="enrollment.html">Sign up</a></li> 
+              <!-- <li><a class="active" href="#">Log In</a></li> ЭТО ЛОГИН ВОЗМОЖНО БУДЕТ НУЖНО--> 
+            </ul>   
+          </nav>
+    <div class="main-content">
+        <br>
+            <h1>Italian language</h1>
+            <br>
+        <p>Italian is a beautiful and romantic language that is spoken by over 85 million people worldwide. It is the official language of Italy, San Marino, and the Vatican City, and is also spoken in parts of Switzerland, Croatia, Slovenia, and Ethiopia.</p>
+        <p>Our experienced native Italian instructors will guide you through a structured curriculum, helping you progress from basic Italian to advanced levels. You'll develop your language skills through a variety of methods, including reading, writing, listening, and speaking. But it's not just about the classroom experience! Our language immersion activities, such as cultural events and language exchanges, will give you the opportunity to practice your Italian in real-life situations and fully immerse yourself in the language and culture. By the end of our program, you'll have the skills and confidence to communicate effectively in Italian, as well as a deeper appreciation for the language and culture. Sign up now for an unforgettable learning experience!</p>
+        <a href="enrollment.html">Sign up</a>
+    </div>
+<div class="row">
+    <div class="container">
+        <img src="avatar2.jpg" alt="placeholder image">
+        <h2>Lucia</h2>
+        <p>Lucia is a passionate and experienced Italian language teacher who has been teaching the language for over a decade. She uses a communicative approach in her classes, encouraging students to engage in real-life conversations and activities to improve their language skills.</p>
+    </div>
+    <div class="container">
+        <img src="avatar3.jpg" alt="placeholder image">
+        <h2>Marco</h2>
+        <p>Marco is a patient and dedicated Italian language teacher who has a talent for breaking down complex grammar concepts into easily understandable pieces. He creates a supportive and friendly learning environment in his classes, where students feel comfortable to ask questions and make mistakes.</p>
+    </div>
+    <div class="container">
+        <img src="avatar4.jpg" alt="placeholder image">
+        <h2>Sofia</h2>
+        <p>Sofia is a dynamic and innovative Italian language teacher who incorporates multimedia tools and technology in her teaching. She designs engaging and interactive lessons that cater to different learning styles and uses a variety of resources, such as films, music, and games, to make learning fun and effective.</p>
+    </div>
+</div>
+<div class="scroll-to-top" onclick="scrollToTop()"></div>
+<script>
+    function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  // Show/hide scroll-to-top button based on scroll position
+  window.addEventListener('scroll', function() {
+    var scrollToTopBtn = document.querySelector('.scroll-to-top');
+    if (window.pageYOffset > 200) {
+      scrollToTopBtn.style.display = 'block';
+    } else {
+      scrollToTopBtn.style.display = 'none';
+    }
+  });
+</script>
+
+</body>
+</html>

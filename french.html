@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>French</title>
+  <link rel="stylesheet" type="text/css" href="project1.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,400;0,500;0,900;1,100;1,200;1,400;1,500;1,800;1,900&display=swap" rel="stylesheet">
+  <style>
+    .scroll-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 40px;
+      height: 40px;
+      background-color: #5e00ac;
+      color: #fff;
+      text-align: center;
+      line-height: 40px;
+      font-size: 20px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <nav> 
+      <div class="logo" id="your-link-id">Triolingo</div> 
+      <ul> 
+        <li class="list"><a href="index.html">Home</a></li>  
+        <li class="list"><a href="index.html#feedbacks">Feedbacks</a></li>
+        <li class="list dropdown">
+          <a href="index.html#courses" class="dropbtn">Courses <i class="fa fa-caret-down"></i></a>
+          <div class="dropdown-content">
+            <a href="french.html">French Language</a>
+            <a href="italian.html">Italian Language</a>
+            <a href="turkish.html">Turkish Language</a>
+          </div>
+        </li> 
+        <li class="list"><a href="1.html">Game</a></li>  
+        <li class="list"><a href="abc.html">About Us</a></li>
+        <li class="list"><a href="enrollment.html">Sign up</a></li> 
+        <!-- <li><a class="active" href="#">Log In</a></li> ЭТО ЛОГИН ВОЗМОЖНО БУДЕТ НУЖНО--> 
+      </ul>   
+    </nav>
+    <div class="main-content">
+      <h1>French language</h1>
+      <p>French is a captivating and elegant language that is spoken by over 220 million people worldwide. It is the official language of France, Belgium, Switzerland, and many countries in Africa, Asia, and the Americas.</p>
+      <p>At our language school, our skilled and experienced native French instructors will lead you through a structured curriculum, starting from the basics and progressing to advanced levels. You'll learn the language through a variety of methods, including reading, writing, listening, and speaking. Beyond the classroom, we offer language immersion activities, such as cultural events and language exchanges, that will provide you with the opportunity to practice your French in real-life situations and fully immerse yourself in the language and culture. Our program is designed to help you develop your French skills in a supportive and encouraging environment. You'll gain the skills and confidence needed to communicate effectively in French and deepen your understanding and appreciation of the language and culture. Whether you're learning French for personal enrichment or professional advancement, our program promises to be an unforgettable and enriching learning experience. Enroll now and embark on your French language journey with us!
+      </p>
+      <a href="enrollment.html">Sign up</a>
+    </div>
+    <div class="row">
+      <div class="container">
+        <img src="avatar5.jpg" alt="placeholder image">
+        <h2>Madame Dupont</h2>
+        <p>Madame Dupont is a highly experienced French language teacher who has been teaching for over 20 years. She has a deep understanding of French grammar and a passion for French literature, which she incorporates into her lessons.</p>
+      </div>
+      <div class="container">
+        <img src="avatar12.jpg" alt="placeholder image">
+        <h2>Martin</h2>
+        <p>Monsieur Martin is a dynamic and engaging French language teacher who creates a fun and interactive learning environment for his students. He uses a variety of teaching techniques to cater to different learning styles and encourages his students to speak French from day one.</p>
+      </div>
+      <div class="container">
+        <img src="avatar10.jpg" alt="placeholder image">
+        <h2>Leblanc</h2>
+        <p>Madame Leblanc is a patient and supportive French language teacher who is dedicated to helping her students achieve their language goals. She has a talent for breaking down complex concepts into simple, easy-to-understand lessons and uses real-life examples to make learning French practical and enjoyable.</p>
+      </div>
+    </div>
+    <div class="scroll-to-top" onclick="scrollToTop()">
+        &uarr;
+      </div>
+
+    <script>
+      var frenchLanguage = {
+        title: 'French language',
+        description: 'French is a captivating and elegant language that is spoken by over 220 million people worldwide. It is the official language of France, Belgium, Switzerland, and many countries in Africa, Asia, and the Americas.',
+        instructors: [
+          {
+            name: 'Madame Dupont',
+            image: 'avatar5.jpg',
+            bio: 'Madame Dupont is a highly experienced French language teacher who has been teaching for over 20 years. She has a deep understanding of French grammar and a passion for French literature, which she incorporates into her lessons.'
+          },
+          {
+            name: 'Martin',
+            image: 'avatar12.jpg',
+            bio: 'Monsieur Martin is a dynamic and engaging French language teacher who creates a fun and interactive learning environment for his students. He uses a variety of teaching techniques to cater to different learning styles and encourages his students to speak French from day one.'
+          },
+          {
+            name: 'Leblanc',
+            image: 'avatar10.jpg',
+            bio: 'Madame Leblanc is a patient and supportive French language teacher who is dedicated to helping her students achieve their language goals. She has a talent for breaking down complex concepts into simple, easy-to-understand lessons and uses real-life examples to make learning French practical and enjoyable.'
+          }
+        ]
+      };
+
+      // Accessing the properties of the objects
+      console.log(frenchLanguage.title);
+      console.log(frenchLanguage.description);
+      console.log(frenchLanguage.instructors[0].name);
+      console.log(frenchLanguage.instructors[1].image)
+      console.log(frenchLanguage.instructors[1].bio);
+
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+
+      // Show/hide scroll-to-top button based on scroll position
+      window.addEventListener('scroll', function() {
+        var scrollToTopBtn = document.querySelector('.scroll-to-top');
+        if (window.pageYOffset > 200) {
+          scrollToTopBtn.style.display = 'block';
+        } else {
+          scrollToTopBtn.style.display = 'none';
+        }
+      });
+    </script>
+  </body>
+  </html>

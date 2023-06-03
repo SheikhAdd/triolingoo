@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+    <link rel="stylesheet" href="enrollment.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@1,200&family=Oswald:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+ 
+  <div>
+    <nav>
+      <div class="logo">Language Courses</div>
+      <ul>
+        <li class="list"><a href="index.html">Home</a></li> 
+            <li class="list"><a href="index.html#courses">Courses</a></li> 
+            <li class="list"><a href="index.html#feedbacks">Feedbacks</a></li> 
+            <li class="list"><a href="index.html#schedule">Schedule</a></li>
+            <li class="list"><a href="1.html">Game</a></li>  
+            <li class ="list"><a href="abc.html">About Us</a></li>
+            <li class="list"><a href="enrollment.html">Sign up</a></li>
+        <!-- <li><a class="active" href="#">Log In</a></li> ЭТО ЛОГИН ВОЗМОЖНО БУДЕТ НУЖНО-->
+      </ul>
+    </nav>
+  </div>
+  <form action="" method="post">
+    <h2 >Registration Form</h2>
+    <label> First name </label>         
+    <input type="text" name="firstname" size="15"/> <br>   
+    <label> Last name: </label>         
+    <input type="text" name="lastname" size="15"/> <br>
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username" required> <br> <br>
+
+    <label>   
+      Languages :  
+      </label>   
+      <select class="lang">  
+      <option value="Language">Language</option>  
+      <option value="Turkish">Turkish</option>  
+      <option value="Italian">Italian</option>  
+      <option value="French">French</option>   
+      </select>  <br> <br> 
+
+      <label>   
+        Gender :  
+        </label><br>  <br>
+        <input type="radio" name="gender" value="male" /> Male   
+        <input type="radio" name="gender" value="female" /> Female   
+        <input type="radio" name="gender" value="other" /> Other  
+        <br>  
+        <br>  
+
+        <label>   
+          Phone :  
+          </label>  
+          <input type="text" name="country code"  value="+7" size="1"/>   
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" required>
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" required>
+
+    <button  type="submit" style="text-align: center;">Register</button>
+    
+  </form>
+  <script>
+    var form = document.querySelector('form');
+    var passwordInput = document.getElementById('password');
+    var phoneInput = document.querySelector('input[name="country code"]');
+    var emailInput = document.getElementById('email');
+
+    form.addEventListener('submit', function(event) {
+      // Prevent the form from submitting
+      event.preventDefault();
+
+      // Validate password
+      var password = passwordInput.value;
+      if (password.length < 6) {
+        alert('Password must be at least 6 characters long.');
+        return;
+      }
+
+      // Validate phone number
+      var phoneNumber = phoneInput.value;
+      if (!isValidPhoneNumber(phoneNumber)) {
+        alert('Please enter a valid phone number.');
+        return;
+      }
+
+      // Validate email
+      var email = emailInput.value;
+      if (!isValidEmail(email)) {
+        alert('Please enter a valid email address.');
+        return;
+      }
+
+      // If all validations pass, submit the form
+      form.submit();
+    });
+
+    function isValidPhoneNumber(phoneNumber) {
+      // Assuming a valid phone number must start with a "+" sign followed by digits
+      return /^\+\d+$/.test(phoneNumber);
+    }
+
+    function isValidEmail(email) {
+      // Simple email validation regex pattern
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+</body>
+</html>

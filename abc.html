@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Developers Information</title>
+  <!-- Link Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-image: url("background.webp");
+      background-size: cover;
+    }
+    
+    nav {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    padding: 10px 100px;
+    box-sizing: border-box;
+    transition: .3s;
+    background-color: #8B00FF;
+}
+nav .logo {
+    padding: 16px 20px;
+    height: 80px;
+    float: left;
+    font-size: 30px;
+    transition: .3s;
+    color: white;
+}
+nav ul{
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    list-style: none;
+}
+nav ul li a {
+    line-height: 70px;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s;
+}
+nav ul li a:focus{
+    outline: none;
+}
+nav ul li a.active{
+    background: #faa307;
+    color: #fff;
+    border-radius: 6px;
+  }
+
+    .developer {
+      border: 1px solid #ccc;
+      border-radius: 15px;
+      padding: 20px;
+      margin-bottom: 20px;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      box-sizing: border-box; /* Added to include border width in dimensions */
+    }
+    
+    .name {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      margin-left: 20px;
+    }
+    
+    .contact {
+      margin-bottom: 10px;
+      margin-left: 20px;
+    }
+    
+    .contribution {
+      font-style: italic;
+      margin-left: 20px;
+    }
+    
+    .developer-img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+  </style>
+</head>
+<body>
+
+    <nav> 
+        <div class="logo">Triolingo</div> 
+        <ul> 
+          <li class="list"><a href="index.html">Home</a></li> 
+            <li class="list"><a href="index.html#courses">Courses</a></li> 
+            <li class="list"><a href="index.html#feedbacks">Feedbacks</a></li> 
+            <li class="list"><a href="index.html#schedule">Schedule</a></li>
+            <li class="list"><a href="1.html">Game</a></li>  
+            <li class ="list"><a href="abc.html">About Us</a></li>
+            <li class="list"><a href="enrollment.html">Sign up</a></li>
+          <!-- <li><a class="active" href="#">Log In</a></li> ЭТО ЛОГИН ВОЗМОЖНО БУДЕТ НУЖНО--> 
+        </ul>   
+       </nav> 
+       <br><br><br>
+
+  <div class="container">
+    <h1 class="text-center">Developers Information</h1>
+  
+    <div class="row">
+      <div class="col-md-6">
+        <div class="developer">
+          <img class="developer-img" src="Daiyana.jpg" alt="Developer 1">
+          <div>
+            <div class="name">Gabdullina Daiyana</div>
+            <div class="contact">
+              <strong>Email:</strong> 220621@astanait.edu.kz<br>
+              <strong>Phone:</strong> 8 702 465 43 08
+            </div>
+            <div class="contribution">
+              <strong>Contribution:</strong> Student from AITU. Group BDA-2204. Made the JS part of the site including animations and events.
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-6">
+        <div class="developer">
+          <img class="developer-img" src="Kaiyrzhan.jpg" alt="Developer 2">
+          <div>
+            <div class="name">Duisen Kaiyrzhan</div>
+            <div class="contact">
+              <strong>Email:</strong> 220315@astanait.edu.kz<br>
+              <strong>Phone:</strong> 8 747 186 51 54
+            </div>
+            <div class="contribution">
+              <strong>Contribution:</strong> Student from AITU. Group BDA-2204. Made About Us and add js to main page
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-md-6">
+        <div class="developer">
+          <img class="developer-img" src="Adilkhan.jpg" alt="Developer 3">
+          <div>
+            <div class="name">Shaikhy Adilkhan</div>
+            <div class="contact">
+              <strong>Email:</strong> 222222@astanait.edu.kz<br>
+              <strong>Phone:</strong> 8 707 720 04 12
+            </div>
+            <div class="contribution">
+              <strong>Contribution:</strong> Student from AITU. Group BDA-2204. Made game-logic in 3rd assignment.
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-6">
+        <div class="developer">
+          <img class="developer-img" src="Bakdaulet.jpg" alt="Developer 4">
+          <div>
+            <div class="name">Kalymbek Bakdaulet</div>
+            <div class="contact">
+              <strong>Email:</strong> 220202@astanait.edu.kz<br>
+              <strong>Phone:</strong> 8 778 467 78 48
+            </div>
+            <div class="contribution">
+              <strong>Contribution:</strong> Student from AITU. Group BDA-2204.Made game-logic in 3rd assignment.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Link Bootstrap JS (optional) -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
